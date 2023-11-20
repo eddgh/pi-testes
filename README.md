@@ -46,3 +46,4 @@ pytest tests/ --html=report.html
 
 
 ## Instalação com Pipenv
+###### Pipenv facilita instalar automacticamente as libs
