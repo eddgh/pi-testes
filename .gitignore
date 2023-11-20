@@ -1,2 +1,5 @@
 # ignorar todas as imagens
-**screen
+screen*.*
+
+#caches
+.pytest_cache
