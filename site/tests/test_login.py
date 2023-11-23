@@ -31,8 +31,7 @@ class TestLogin:
         login() # Entrar na página de login      
         invalidPassword('12345') # Password com menos de 6 digitos
         driver.save_screenshot('screen_invalid_password.png') 
-        time.sleep(3)
-                
+        time.sleep(3)                
                 
     def teardown_class(self):
         driver.close()        
