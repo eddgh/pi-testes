@@ -2,6 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
+
 servico = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=servico)
 
@@ -79,7 +80,7 @@ def invalidPassword(password):
     assert 'A senha deve conter no mínimo 6 caracteres.' in failedPassword.text            
     
 def viewPasswordButton():
-    btn_eye_password = driver.find_element(By.CLASS_NAME,'sc-hiKeQa.laojnR')
+    btn_eye_password = driver.find_element(By.CSS_SELECTOR, "#root > div > main > form > div > svg")
     btn_eye_password.click()
     driver.save_screenshot('screen_view_password.png')
 

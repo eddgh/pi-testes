@@ -1,5 +1,11 @@
 # ignorar todas as imagens
 screen*.*
 
-#caches
+# caches
 .pytest_cache
+
+# venv
+Include
+Lib
+Scripts
+pyvenv.cfg
