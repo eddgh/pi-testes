@@ -1,17 +1,9 @@
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
+from .config_browser import *
 
-
-servico = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=servico)
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
+import time
 
 url ='http://localhost:5173/'
 
-import time
 
 # ******************************** Pattern Funcitions ********************************
 
@@ -24,7 +16,8 @@ def open_home():
     
 # Clicar no botão Entrar (signin da pagina home) 
 def sign_in():
-    driver.find_element(By.XPATH, btn_link_sign_in).click()
+    element = driver.find_element(By.XPATH, btn_link_sign_in)
+    element.click()
     time.sleep(3)
     
 # Entrar na página de login
@@ -83,6 +76,7 @@ def viewPasswordButton():
     btn_eye_password = driver.find_element(By.CSS_SELECTOR, "#root > div > main > form > div > svg")
     btn_eye_password.click()
     driver.save_screenshot('screen_view_password.png')
+    return btn_eye_password
 
 def login_button_submit():
     btn_submit = driver.find_element(By.XPATH,'//*[@id=\"root\"]/div[1]/main/form/button')

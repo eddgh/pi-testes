@@ -5,7 +5,11 @@ class TestLogin:
     def test_login_button_view_password(self):
         login() # Entrar na página de login
         Password('12345678')
-        viewPasswordButton()       
+        viewPasswordButton()
+        
+    def test_insert_password(self):
+        login()
+        Password('12345678')       
 
     def test_login_success(self):           
         login() # Entrar na página de login                 
