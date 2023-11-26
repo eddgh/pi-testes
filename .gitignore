@@ -1,11 +1,20 @@
+**\__pycache__
+
 # ignorar todas as imagens
 screen*.*
 
 # caches
 .pytest_cache
 
+
+
 # venv
 Include
 Lib
 Scripts
 pyvenv.cfg
+
+site/tests/__pycache__/test_login.cpython-311-pytest-7.4.3.pyc
+utils/__pycache__/__init__.cpython-311.pyc
+utils/__pycache__/config_browser.cpython-311.pyc
+utils/__pycache__/utilities.cpython-311.pyc
