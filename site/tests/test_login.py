@@ -7,11 +7,8 @@ class TestLogin:
         login() # Entrar na página de login
         Password('12345678')
         viewPasswordButton()
+        print("Verifique o screenshot 'screen_view_password.png'")
         
-    def test_insert_password(self):
-        login()
-        Password('12345678')       
-
     def test_login_success(self):           
         login() # Entrar na página de login                 
         signin_page_certificate('signin')  # Certificar-se de que está na página de login baseado no endPoint      
