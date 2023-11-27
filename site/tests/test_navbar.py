@@ -33,4 +33,17 @@ class TestNavBar:
         print('Destino esperado: ' + Destino_esperado)
         Destino_encontrado = driver.current_url
         print ('Destino encontrado: ' + Destino_encontrado)
-        assert Destino_esperado == Destino_encontrado        
+        assert Destino_esperado == Destino_encontrado 
+
+    def test_NavBarBtnAcessRoute(self):
+        open_home()
+        navBarBtnAcessRoute = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-eCAqax.kbjCsX > div > div > button:nth-child(3)')
+        Destino_esperado = driver.current_url + 'produto/123123'
+        navBarBtnAcessRoute.click()
+        time.sleep(3)
+        print('Nome do botão: ' + navBarBtnAcessRoute.text)
+        print('Destino esperado: ' + Destino_esperado)
+        Destino_encontrado = driver.current_url
+        print ('Destino encontrado: ' + Destino_encontrado)
+        assert Destino_esperado == Destino_encontrado 
+                       

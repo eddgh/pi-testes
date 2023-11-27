@@ -1,7 +1,8 @@
 **\__pycache__
 
 # ignorar todas as imagens
-screen*.*
+# screen*.*
+screen_view_password.png
 
 # caches
 .pytest_cache
