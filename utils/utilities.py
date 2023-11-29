@@ -57,7 +57,7 @@ def blankEmail(email):
     Email(email + Keys.RETURN)
     failedEmail = driver.find_element(By.XPATH,'//*[@id="root"]/div[1]/main/form/p[1]') # gera a mensagem de erro 'O campo de email não foi preenchido.'
     print('Campo Email em branco: ' + failedEmail.text)
-    assert 'O campo de email não foi preenchido.' in failedEmail.text        
+    assert 'O campo de email não foi preenchido.' in failedEmail.text     
 
 def Password(password):
     inputPassword = driver.find_element(By.XPATH,'//*[@id=\"root\"]/div[1]/main/form/div/input')

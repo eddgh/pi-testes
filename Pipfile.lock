@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dc36c264a491f53c61ba8fa71ed2d4dd8049aab479fd1d6c538688c290d559d3"
+            "sha256": "2dcc95fb8b038f2f8b0da27ef9c6d654b1e5bee5862532277895dfb358cb5964"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -204,11 +204,11 @@
         },
         "idna": {
             "hashes": [
-                "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4",
-                "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
+                "sha256:9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca",
+                "sha256:c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f"
             ],
             "markers": "python_version >= '3.5'",
-            "version": "==3.4"
+            "version": "==3.6"
         },
         "iniconfig": {
             "hashes": [
@@ -225,6 +225,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==3.1.2"
+        },
+        "localstoragepy": {
+            "hashes": [
+                "sha256:4446afc2df066f2dde33430a0fd9416d86515f798346fc9aa16a11f615f20d7e",
+                "sha256:bcaaf07a5cbaab65c34cc4532a685b2a44243979d089d8d37a9c612ac743c0bf"
+            ],
+            "index": "pypi",
+            "version": "==0.2.3"
         },
         "markupsafe": {
             "hashes": [

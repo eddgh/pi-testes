@@ -35,6 +35,7 @@ class TestNavBar:
         print ('Destino encontrado: ' + Destino_encontrado)
         assert Destino_esperado == Destino_encontrado 
 
+
     def test_NavBarBtnAcessRoute(self):
         open_home()
         navBarBtnAcessRoute = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-eCAqax.kbjCsX > div > div > button:nth-child(3)')
@@ -46,4 +47,6 @@ class TestNavBar:
         Destino_encontrado = driver.current_url
         print ('Destino encontrado: ' + Destino_encontrado)
         assert Destino_esperado == Destino_encontrado 
-                       
+
+    def teardown_class(self):
+        driver.close()                               

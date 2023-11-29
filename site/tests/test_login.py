@@ -1,3 +1,4 @@
+
 from utils import *
 
 class TestLogin:
@@ -9,13 +10,15 @@ class TestLogin:
         viewPasswordButton()
         print("Verifique o screenshot 'screen_view_password.png'")
         
-    def test_login_success(self):           
+    def test_login_success(self):                   
         login() # Entrar na página de login                 
         signin_page_certificate('signin')  # Certificar-se de que está na página de login baseado no endPoint      
         form_login_certificate_hasTitle('Inicie sua sessão') # Certificar-se de que o formulário é o de login            
         signup_button_exists('Cadastre-se') # Verificar existencia do botão Cadastre-se na página de login     
         Email('admin@admin.com') # Enviando email success
-        Password('12345678') # Enviando password success                               
+        Password('12345678') # Enviando password success  
+        
+        
         login_button_submit() # Enviar o formulário de login
         driver.save_screenshot('screen_login_success.png')                
               
@@ -35,6 +38,5 @@ class TestLogin:
         driver.save_screenshot('screen_invalid_password.png') 
         time.sleep(3)                
                 
-    def teardown_class(self):
-        driver.close()        
+
      
