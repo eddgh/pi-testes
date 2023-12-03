@@ -7,7 +7,7 @@ screen_view_password.png
 # caches
 .pytest_cache
 
-
+node_modules
 
 # venv
 Include

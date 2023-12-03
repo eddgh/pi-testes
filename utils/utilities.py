@@ -20,6 +20,16 @@ def sign_in():
     element.click()
     time.sleep(3)
     
+def sign_up():
+    element = driver.find_element(By.XPATH, '//*[@id="root"]/nav[1]/main/div[2]/div/div/button[2]')
+    element.click()
+    time.sleep(2)
+
+def btn_home():
+    element = driver.find_element(By.XPATH, '//*[@id="root"]/nav[1]/main/div[1]/img')
+    element.click()
+    time.sleep(2)              
+    
 # Entrar na página de login
 def login():
     open_home()          
