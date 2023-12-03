@@ -2,8 +2,8 @@ import time
 from utils import open_home
 from utils.config_browser import *
 
-class TestNavBar:
-        
+class TestNavBar:    
+            
     def test_NavBar_Logo(self):
         open_home()
         navBarLogo = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-dlniIP.cnAMdn > img')
@@ -38,6 +38,7 @@ class TestNavBar:
 
     def test_NavBarBtnAcessRoute(self):
         open_home()
+        global navBarBtnAcessRoute
         navBarBtnAcessRoute = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-eCAqax.kbjCsX > div > div > button:nth-child(3)')
         Destino_esperado = driver.current_url + 'produto/123123'
         navBarBtnAcessRoute.click()
@@ -46,7 +47,4 @@ class TestNavBar:
         print('Destino esperado: ' + Destino_esperado)
         Destino_encontrado = driver.current_url
         print ('Destino encontrado: ' + Destino_encontrado)
-        assert Destino_esperado == Destino_encontrado 
-
-    def teardown_class(self):
-        driver.close()                               
+        assert Destino_esperado == Destino_encontrado
