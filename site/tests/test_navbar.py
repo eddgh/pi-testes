@@ -6,7 +6,7 @@ class TestNavBar:
             
     def test_NavBar_Logo(self):
         open_home()
-        navBarLogo = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-dlniIP.cnAMdn > img')
+        navBarLogo = driver.find_element(By.XPATH, '//*[@id="root"]/nav[1]/main/div[1]/img')
         src = navBarLogo.get_property('src')
         object_type = navBarLogo.aria_role
         print('Tipo de objeto: ' + object_type) 
@@ -39,7 +39,7 @@ class TestNavBar:
     def test_NavBarBtnAcessRoute(self):
         open_home()
         global navBarBtnAcessRoute
-        navBarBtnAcessRoute = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.jVcacZ > main > div.sc-eCAqax.kbjCsX > div > div > button:nth-child(3)')
+        navBarBtnAcessRoute = driver.find_element(By.XPATH, '//*[@id="root"]/nav[1]/main/div[2]/div/div/button[3]')
         Destino_esperado = driver.current_url + 'produto/123123'
         navBarBtnAcessRoute.click()
         time.sleep(3)
