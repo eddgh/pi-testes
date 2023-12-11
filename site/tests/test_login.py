@@ -18,7 +18,10 @@ class TestLogin:
         Email('admin@admin.com') # Enviando email success
         Password('12345678') # Enviando password success            
         login_button_submit() # Enviar o formulário de login
-        driver.save_screenshot('screen_login_success.png')                
+        driver.save_screenshot('screen_login_success.png')
+        avatar = driver.find_element(By.CSS_SELECTOR, '#root > nav.sc-bdnyFh.ghDIEg > main > div.sc-eCAqax.kbjCsX > p.sc-jrsKJM.dasuIU')  
+        assert avatar.text is not "" 
+        print('Usuario Logado: iniciais(' + avatar.text + ')')          
         logout()  
               
     def test_login_fail_invalid_email(self):
