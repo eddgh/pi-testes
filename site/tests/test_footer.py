@@ -16,7 +16,7 @@ class TestFooterSocialMedia:
     
     def test_footerSocialMedia_Facebook(self):
         open_home()
-        Facebook = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-bqGGcD.bhqxOK > main > div > button:nth-child(1) > svg')
+        Facebook = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-dItHI.fhchdd > main > div > button:nth-child(1) > svg')
         Facebook.screenshot
         Facebook.click()
         time.sleep(2)
@@ -25,7 +25,7 @@ class TestFooterSocialMedia:
 
     def test_footerSocialMedia_Linkedin(self):
         open_home()
-        Linkedin = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-bqGGcD.bhqxOK > main > div > button:nth-child(2) > svg')
+        Linkedin = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-dItHI.fhchdd > main > div > button:nth-child(2) > svg')
         Linkedin.screenshot
         Linkedin.click()
         time.sleep(2)
@@ -34,7 +34,7 @@ class TestFooterSocialMedia:
 
     def test_footerSocialMedia_Instagram(self):
         open_home()
-        Instagram = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-bqGGcD.bhqxOK > main > div > button:nth-child(3) > svg')
+        Instagram = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-dItHI.fhchdd > main > div > button:nth-child(3) > svg')
         Instagram.screenshot
         Instagram.click()
         time.sleep(2)
@@ -43,7 +43,7 @@ class TestFooterSocialMedia:
         
     def test_footerSocialMedia_Twitter(self):
         open_home()
-        Twitter = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-bqGGcD.bhqxOK > main > div > button:nth-child(4) > svg')
+        Twitter = driver.find_element(By.CSS_SELECTOR,'#root > nav.sc-dItHI.fhchdd > main > div > button:nth-child(4) > svg')
         Twitter.screenshot
         Twitter.click()
         time.sleep(2)

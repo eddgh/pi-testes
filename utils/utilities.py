@@ -33,7 +33,12 @@ def btn_home():
 # Entrar na página de login
 def login():
     open_home()          
-    sign_in()    
+    sign_in()  
+
+# Logout
+def logout():
+    element = driver.find_element(By.XPATH, '//*[@id="root"]/nav[1]/main/div[2]/p[2]/a')
+    element.click()      
 
 #certificar-se de que está na página de login
 def signin_page_certificate(signinEndPoint):    

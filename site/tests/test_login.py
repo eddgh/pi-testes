@@ -16,11 +16,10 @@ class TestLogin:
         form_login_certificate_hasTitle('Inicie sua sessão') # Certificar-se de que o formulário é o de login            
         signup_button_exists('Cadastre-se') # Verificar existencia do botão Cadastre-se na página de login     
         Email('admin@admin.com') # Enviando email success
-        Password('12345678') # Enviando password success  
-        
-        
+        Password('12345678') # Enviando password success            
         login_button_submit() # Enviar o formulário de login
         driver.save_screenshot('screen_login_success.png')                
+        logout()  
               
     def test_login_fail_invalid_email(self):
         login() # Entrar na página de login      
